@@ -16,7 +16,17 @@
     background-position: 30% 80%;
 }
 
-.background-overlay{
+.section1::before{
+    content:"";
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* .background-overlay{
     height:100%;
     width:100%;
     position: absolute;
@@ -25,7 +35,7 @@
     right:0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
-}
+} */
 
 ul{
     list-style: none;
