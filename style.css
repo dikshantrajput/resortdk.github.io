@@ -1,0 +1,691 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width:100%;
+}
+
+.section1{
+    height:100vh;
+    width:100%;
+    background: url("./images/background10.jpg") center center/cover;
+    background-attachment: fixed;
+    background-position: 30% 80%;
+}
+
+.background-overlay{
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+header{
+    position: relative;
+    height:10vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    width:100%;
+}
+
+.burger{
+    height:30px;
+    cursor: pointer;
+    width:35px;
+    display: none;
+    transition: all 0.5s ease ;
+}
+
+.layer1,.layer2,.layer3{
+    transition: all 0.5s linear;
+    background-color: white;
+    height:0.20em;
+    width:100%;
+    border-radius: 5px;;
+    margin-top: 5px;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+}
+.menubar{
+    width:40%;
+    margin-right: 2em;
+}
+
+.btn{
+    margin-right:5em;
+}
+
+.list-items a{
+    font-size: 1.3em;
+    color:white;
+}
+
+.list-items a:hover{
+    color: violet;
+}
+.btn a{
+    color:white;
+    border:1px solid white;
+    font-family: sans-serif;
+    font-size: small;
+    text-transform: capitalize;
+    padding: 0.7em 2em;
+}
+
+.btn a:hover{
+    background-color: white;
+    color:blueviolet;
+    font-weight: bold;
+    transition: all 0.2s linear;
+}
+
+.heading{
+    width:100%;
+    text-align: center;
+    position: relative;
+    color:whitesmoke;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-40%);
+}
+.heading h1{
+    font-size: 3.5em;
+}
+
+.heading p{
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+}
+.heading .book-btn a{
+    text-transform: capitalize;
+    font-size: 1.5em;
+    color:black;
+    background-color: white;
+    border:2px solid white;
+    padding: 0.4em 1.7em;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.heading .book-btn a:hover{
+    color:white;
+    transition: all 0.3s linear;
+    background-color: transparent;
+}
+
+.section2{
+    width:100%;
+    background-color: white;
+    text-align: center;
+    padding:1em;
+    margin-bottom: 3em;
+}
+
+.paras{
+    display: flex;
+    justify-content: space-around;
+    width:60%;
+    margin:0 auto;
+}
+
+.paras p{
+    text-align: justify;
+    font-size: 1.1em;
+    font-weight: 100;
+    font-family: "Lato";
+}
+
+.left-div{
+    width:40%;
+}
+
+.right-div{
+    width:40%;
+}
+
+.section2 h1{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 3em;
+    font-weight: normal;
+    margin:1em;
+}
+
+.section3{
+    margin:3em 0;
+    height:60vh;
+    position: relative;
+    z-index:99;
+    background: url("./images/background8.jpg") center center/cover;
+    background-attachment: fixed;
+}
+
+.section3::after{
+    content: "";
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.4);
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:0;
+}
+
+.section3 > *{
+    position: relative;
+    z-index:99;;
+}
+
+.reservation-info{
+    top:50%;
+    left:10%;
+    transform: translate(-10%,-50%);
+    background-color: rgba(79, 181, 245,0.6);
+    height:50%;
+    display: inline-block;
+    width:25%;
+    padding: 1em;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.reservation-info h2{
+    font-size: 2em;
+    color:whitesmoke;
+    text-transform: capitalize;
+    margin-bottom:1em;
+}
+.reservation-info span{
+    color:white;
+    font-size:1.1em;
+}
+
+.reservation-info .list-items-res{
+    border-bottom:0.5px solid white;
+    margin-bottom:0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation-info .list-items-res .a{
+    margin-right:13px;
+}
+
+.check{
+    border:2px solid white;
+    display: inline-block;
+    left:30%;
+    top:20%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 1em 3em;
+    background-color: rgba(79, 181, 245,0.6);
+}
+.check a{
+    font-size: 1.3em;
+    color:whitesmoke;
+}
+.check:hover{
+    background-color: transparent;
+}
+.check:hover a{
+    color:rgb(79, 181, 245);
+}
+
+.section4{
+    width:100%;
+    padding: 2em ;
+}
+
+.section4-container{
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.first-div,.second-div{
+    display: flex;
+    height:50%;
+}
+
+.first-div .text-div , .first-div .img-div,
+.second-div .text-div , .second-div .img-div{
+    width:50%;
+}
+
+.text-div{
+    padding: 4em;
+    text-align: center;
+    width: 50%;
+}
+
+.second-div{
+    flex-direction: row-reverse;
+}
+
+.text-div h2{
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    margin:1em;
+}
+
+.text-div p{
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+ .sec4-btn{
+    padding: 1em 3em;
+    display: inline-block;
+    margin: 3em;
+    background-color: white;
+    border:2px solid black;
+    transition: 0.5s ;
+}
+
+.text-div a,.card-text-div a{
+    color:purple;
+}
+
+.first-div .img-div{
+    background: url("./images/1.jpg") center center/cover;
+}
+
+.second-div .img-div{
+    background: url("./images/2.jpg") center center/cover;
+}
+.first-div{
+    flex-direction: row-reverse;
+}
+
+.sec4-btn:hover{
+    background-color: #426977 !important;
+    border-color:#426977 !important;
+    color:white;
+}
+
+.section5{
+    background: url("./images/background9.jpg") center center/cover;
+    position: relative;
+    background-attachment: fixed;
+    margin-top: 4em;
+}
+
+.section5:after{
+    content: "";
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.6);
+    z-index:0;
+}
+
+.section5 > *{
+    position: relative;
+    z-index:9;
+    padding: 1em;
+}
+
+.section5 h1{
+    font-size: 3.5em;
+    color:white;
+    text-align: center;
+}
+
+.cards{
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width:30%;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.6);
+}
+
+.card-text-div{
+    padding: 1em;
+    height:60%;
+}
+
+.card .card-img-div1{
+    background: url("./images/3.jpg") center center/cover;
+    height:230px;
+    width:100%;
+}
+
+.card .card-img-div2{
+    background: url("./images/4.jpg") center center/cover;
+    height:230px;
+    width:100%;
+}
+
+.card .card-img-div3{
+    background: url("./images/5.jpg") center center/cover;
+    height:230px;
+    width:100%;
+}
+
+.card-text-div h2{
+    font-weight: normal;
+    margin:0.5em;
+    font-size: 1.7em;
+    margin-left:0;
+    margin-top: 0;
+}
+
+.card-text-div p{
+    margin:1em 0 0 0;
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+.card-text-div .sec4-btn{
+    padding: 1em 1em;
+}
+.card-text-div span{
+    margin-right:0.8em;
+}
+.card-text-div a{
+    color:black;
+    font-size: 1em;
+}
+
+.card-text-div .last-btn{
+    margin-top:4em;
+}
+
+footer{
+    background-color: black;
+    padding: 1em;
+}
+
+footer h1{
+    font-size: 2.4em;
+    font-family: monospace;
+    font-weight: normal;
+    color:white;
+    text-align: center;
+}
+
+.social-icons .fa{
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+.social-icons .fa:hover{
+    transform: scale(1.2);
+}
+
+.social-icons{
+    width:20%;
+    display: flex;
+    justify-content: space-between;
+    margin:1em auto;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+
+@media screen and (max-width:1100px){
+    .section4-container{
+        width:90%;
+    }
+
+    .cards{
+        width:90%;
+    }
+    .card{
+        width:32%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .burger{
+        display: block;
+    }
+
+    header{
+        background-color: rgba(150, 150, 150, 0.733);
+    }
+    nav{
+        justify-content: center;
+        
+    }
+    .btn{
+        display: none;
+    }
+    .menubar{
+        display: none;
+    }
+    .new-header{
+        height:40vh;
+    }
+
+    .new-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .new-nav .menubar{
+        display: block;
+        margin:0;
+        height:20vh;
+    }
+    .new-nav .list{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .cross{
+        position: absolute;
+       bottom: 0;
+        outline: none;
+        transition: all 1s ease;
+    }
+    
+    .cross .layer1 {
+        transform: rotate(45deg);
+        position: absolute;
+    }
+
+    .cross .layer2,.cross .layer3{
+        transform: rotate(-45deg);
+        position: absolute;
+    }
+
+    .new-heading{
+        top:25%;
+    }
+    .heading h1{
+        font-size: 2.5em;
+    }
+    .heading p{
+        font-size: 1.2em;
+    }
+    .book-btn{
+        margin:1.5em;
+    }
+    .heading .book-btn a{
+        font-size: 1.2em;
+    }
+    .paras{
+        width:unset;
+    }
+    .reservation-info{
+        width:70%;
+        left:23%;
+        top:35%;
+        height: unset;
+        padding: 2em;
+    }
+    .reservation-info h2{
+        font-size: 1.5em;
+    }
+    .reservation-info span{
+        font-size: 1em;
+    }
+    .check{
+        left:50%;
+        top:25%;
+    }
+    .check a{
+        font-size: 1em;
+    }
+
+    
+    .first-div,.second-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .first-div .text-div, .first-div .img-div, .second-div .text-div, .second-div .img-div{
+        width:100%;
+    }
+
+    .first-div .img-div{
+        height:500px;
+        background-position: 99%;
+    }
+    .second-div .img-div{
+        height:500px;
+        background-position: 99%;
+    }
+    .first-div{
+        flex-direction: column-reverse;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width:100%;
+        margin-top:4em;
+    }
+
+    .card .card-img-div1,
+    .card  .card-img-div2,
+    .card .card-img-div3{
+        height:500px;
+        background-size: cover;
+    }
+
+    .card-text-div{
+        text-align: center;
+    }
+    .social-icons{
+        width:40%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .heading h1{
+        font-size: 1.5em;
+    }
+    .heading p{
+        font-size: 1em;
+    }
+    .section2 h1{
+        font-size: 2em;
+        margin:0.5em;
+    }
+    .paras{
+        flex-direction: column;
+        width:90%;
+    }
+    .paras .left-div ,
+    .paras .right-div{
+        width:100%;
+        margin-bottom:2em;
+    }
+    .reservation-info{
+        padding: 1em;
+        width:90%;
+        left:14%;
+    }
+    .check{
+        top:35%;
+        padding: 0.6em 2em;
+    }
+    .section4{
+        padding: 1em;
+    }
+    .section4-container{
+        width:100%;
+    }
+    .first-div .img-div,
+    .second-div .img-div{
+        height:300px;
+    }
+    .text-div{
+        padding: 1em;
+    }
+    .text-div h2{
+        margin:1em;
+        font-size: 1.5em;
+    }
+    .text-div .sec4-btn{
+        padding: 0.7em 2em;
+        margin:1em;
+        margin-bottom: 2em;
+    }
+    .section5 h1{
+        padding: 0.5em;
+        font-size: 2.5em;
+    }
+    .cards{
+        width:100%;
+    }
+    .card .card-img-div1, .card .card-img-div2, .card .card-img-div3{
+        height:300px;   
+    }
+    .card-text-div .sec4-btn{
+        margin:1em 0;
+    }
+
+    footer h1{
+        font-size: 2em;
+    }
+    footer .fa{
+        font-size: 1.2em;
+    }
+    .social-icons{
+        width:60%;
+    }
+}
